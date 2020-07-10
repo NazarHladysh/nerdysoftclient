@@ -32,7 +32,7 @@ export class Login extends React.Component {
                     status: response.status,
                 });
             })
-            // .then(() => window.location.replace('http://localhost:3000/'))
+            .then(() => window.location.replace(PATH))
             .catch((err) => {
                 this.setState({status: err.response.status});
             });

@@ -16,7 +16,7 @@ export class AnnouncementList extends React.Component {
     }
 
     getUrl = () => {
-        return this.props.isUserAnnouncement ? `${PATH}user` : `${PATH}announcement/findAll`
+        return this.props.isUserAnnouncement ? `${PATH}announcement/user` : `${PATH}announcement/findAll`
     }
 
     componentDidUpdate(prevProps) {
