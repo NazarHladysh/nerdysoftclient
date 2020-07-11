@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import axios from "axios"
 import {Router} from "./router";
-import {PATH} from "./constant";
+import {PATH} from "./component/constant";
 
 axios.interceptors.request.use(config => {
     // Do something before request is sent
