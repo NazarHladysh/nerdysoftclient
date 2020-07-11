@@ -25,7 +25,7 @@ export class CreateAnnouncement extends React.Component {
         axios.post(`${PATH}announcement`, this.state)
             .then(response => {
                 if(response.status === 200) {
-                    window.location.replace(`${PATH}`)
+                    window.location.replace('https://nerdysoftclient.herokuapp.com/')
                 }
             }).catch(error => {
                 alert("Oops something went wrong");

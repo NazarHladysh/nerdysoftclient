@@ -32,7 +32,7 @@ export class Login extends React.Component {
                     status: response.status,
                 });
             })
-            .then(() => window.location.replace(PATH))
+            .then(() => window.location.replace('https://nerdysoftclient.herokuapp.com/'))
             .catch((err) => {
                 this.setState({status: err.response.status});
             });

@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import axios from "axios"
 import {Router} from "./router";
-import {PATH} from "./component/constant";
 
 axios.interceptors.request.use(config => {
     // Do something before request is sent
@@ -24,7 +23,6 @@ axios.interceptors.response.use(response => {
 }, error => {
     if(error.response.status === 403) {
         localStorage.removeItem("JWT")
-        // window.location.replace(PATH)
     }
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
