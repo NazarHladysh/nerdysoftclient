@@ -36,7 +36,7 @@ export class EditAnnouncement extends React.Component {
 
     updateAnnouncement = () => {
         axios.put(`${PATH}announcement`, this.state)
-            .then(window.location.replace('http://localhost:3000/user/announcement'))
+            .then(window.location.replace(`${PATH}user/announcement`))
     }
 
     componentDidMount() {
