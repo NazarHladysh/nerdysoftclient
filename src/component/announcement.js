@@ -17,7 +17,7 @@ export class Announcement extends React.Component {
     }
 
     fetchData = () => {
-        axios.get(`${PATH}${this.props.match.params.id}`)
+        axios.get(`${PATH}announcement/${this.props.match.params.id}`)
             .then(response => this.setState({announcement: response.data}))
             .catch(err => {
                 this.setState({errorMessage: err.response.data.message})
