@@ -24,7 +24,7 @@ axios.interceptors.response.use(response => {
 }, error => {
     if(error.response.status === 403) {
         localStorage.removeItem("JWT")
-        window.location.replace(PATH)
+        // window.location.replace(PATH)
     }
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
